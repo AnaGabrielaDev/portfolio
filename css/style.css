@@ -1,6 +1,68 @@
+@font-face {
+    font-family: Birthstone;
+    font-style: normal;
+    font-weight: 100;
+    src: url(Birthstone/Birthstone-Regular.ttf) format("truetype");
+  
+  }
+ #nome{
+    padding: 0;
+    margin: 0;
+    font-size: 150px;
+    font-family: Birthstone;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+  }
 body{
     background-color: #181818;
 }
-h1, h2, p, a {
+h1, h2, p, a, span {
     color: white;
+}
+main {
+    border-radius: 10px;
+    padding: 15px;
+    width: 900px;
+    margin: auto;
+    box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.356);
+}
+.fotinha {
+  border-radius: 800px;
+  width: 200px;
+  height: 200px;
+} 
+/* maquina de escrever */
+.maquina-escrever::after {
+  content: "|";
+  margin-left: 3px;
+  opacity: 1;
+  -webkit-animation: piscar 1s infinite;
+  animation: piscar 1s infinite;
+}
+@-webkit-keyframes piscar {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+@keyframes piscar {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+/* .me{
+  width: ;
+} */
+
+footer {
+  text-align: center;
 }
