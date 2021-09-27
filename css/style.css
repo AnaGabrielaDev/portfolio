@@ -2,7 +2,7 @@
     font-family: Birthstone;
     font-style: normal;
     font-weight: 100;
-    src: url(Birthstone/Birthstone-Regular.ttf) format("truetype");
+    src: url(fonts/Birthstone/Birthstone-Regular.ttf) format("truetype");
   
   }
  #nome{
@@ -14,19 +14,23 @@
        -moz-user-select: none;
         -ms-user-select: none;
             user-select: none;
+    color: rgb(241, 185, 241);
   }
 body{
     background-color: #181818;
 }
 h1, h2, p, a, span {
     color: white;
+    
 }
+
 main {
     border-radius: 10px;
     padding: 15px;
     width: 900px;
     margin: auto;
     box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.356);
+    background-color: #181818;
 }
 .fotinha {
   border-radius: 800px;
@@ -59,9 +63,20 @@ main {
   }
 }
 
-/* .me{
-  width: ;
-} */
+#category {
+  font-size: 2rem;
+}
+
+#repositories {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+}
 
 footer {
   text-align: center;
